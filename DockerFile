@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu14.04
+FROM nvidia/cuda:10.1-cudnn7-devel
 
 EXPOSE 8888/tcp
 WORKDIR /home
