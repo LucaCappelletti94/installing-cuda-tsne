@@ -5,3 +5,4 @@ git submodule update
 cd build/
 cmake ..
 make -j$(nproc --all)
+make
