@@ -1,0 +1,7 @@
+FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu14.04
+
+EXPOSE 8888/tcp
+WORKDIR /home
+COPY . .
+RUN apt-get update -qyy && apt-get install htop byobu python3-dev libasound2-dev -qyy
+RUN pip install ipywidgets && jupyter nbextension enable --py widgetsnbextension
