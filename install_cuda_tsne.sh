@@ -6,3 +6,5 @@ cd build/
 cmake ..
 make -j$(nproc --all)
 make
+cd python
+python3 -m pip install -e .
